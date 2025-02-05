@@ -7,9 +7,10 @@ public class Professor extends Usuario {
         super(codigoUsuario, nome, db);
     }
 
-    public int maxEmprestimos() {
-        return Integer.MAX_VALUE;
-    }
+   // Não é necessário pois o professor
+   // não tem limte de empréstimos public int maxEmprestimos() {
+   //     return Integer.MAX_VALUE;
+   // }
 
     public long tempoDeEmprestimoMaximo() {
         return 8 * 24 * 60 * 60 * 1000; // 8 dias em milissegundos;
